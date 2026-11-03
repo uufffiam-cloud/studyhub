@@ -162,7 +162,7 @@ input:focus,select:focus,button:focus-visible,summary:focus-visible{outline:2px 
 
 <script>
 // Paste your Google Apps Script web app URL here (it ends with /exec). See google-apps-script.gs for the 5-minute setup. Empty = demo mode.
-var ENDPOINT="https://script.google.com/macros/s/AKfycbyyutq4-UblGgVMJSVhgLl38Barr2HdHADSXwy_Gl6j-JWNH3n6XXnMQzRAb_m-jR7qcg/exec";
+var ENDPOINT="https://script.google.com/macros/s/AKfycbya4jIKBdixZ-XN5VyUVJxU6tRst0OTnN3ZVbj9ECInm_PaCbfU0q6H-QPT9uzVpauRFg/exec";
 var QS=new URLSearchParams(location.search),SRC=QS.get("utm_source")||"direct",CMP=QS.get("utm_campaign")||"",MED=QS.get("utm_medium")||"",VID;
 try{VID=localStorage.getItem("sh_vid");if(!VID){VID=Math.random().toString(36).slice(2,10);localStorage.setItem("sh_vid",VID)}}catch(x){VID="anon"}
 function send(type,extra){var d=Object.assign({type:type,vid:VID,source:SRC,campaign:CMP,medium:MED,time:new Date().toISOString()},extra);if(!ENDPOINT)return Promise.resolve();
